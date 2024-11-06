@@ -1,0 +1,41 @@
+BankingApplication/
+├── src/
+│   ├── model/                     # Entity classes
+│   │   ├── Bank.java
+│   │   ├── Account.java
+│   │   ├── SavingsAccount.java
+│   │   ├── CurrentAccount.java
+│   │   ├── Transaction.java
+│   │   ├── DepositTransaction.java
+│   │   ├── WithdrawalTransaction.java
+│   ├── dao/                       # Data Access Object (DAO) layer
+│   │   ├── AccountDAO.java
+│   │   ├── AccountDAOImpl.java
+│   │   ├── BankDAO.java
+│   │   ├── BankDAOImpl.java
+│   │   ├── TransactionDAO.java
+│   │   ├── TransactionDAOImpl.java
+│   ├── service/                   # Service layer for business logic
+│   │   ├── AccountService.java
+│   │   ├── TransactionService.java
+│   │   ├── BankService.java
+│   ├── controller/                # Controller layer for user interactions
+│   │   ├── BankController.java
+│   ├── utility/                   # Utility classes
+│   │   ├── DBConnection.java
+│   │   ├── TransactionHistoryUtil.java
+│   ├── resource/                  # SQL schema and configuration files
+│   │   ├── sql.schema
+├── test/                          # Test directory
+│   ├── dao/                       # Tests for DAO classes
+│   │   ├── AccountDAOTest.java
+│   │   ├── BankDAOTest.java
+│   │   ├── TransactionDAOTest.java
+│   ├── service/                   # Tests for Service classes
+│   │   ├── AccountServiceTest.java
+│   │   ├── TransactionServiceTest.java
+│   │   ├── BankServiceTest.java
+│   ├── controller/                # Tests for Controller classes
+│   │   ├── BankControllerTest.java
+├── README.md                      # Documentation file
+
