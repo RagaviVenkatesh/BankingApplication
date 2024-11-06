@@ -27,16 +27,6 @@ o	Generate various reports, such as:
 
 **PROJECT STRUCTURE**
 
-BankingApplication/
-├── src/                         # Source directory for application code
-│   ├── model/                # Contains the entity classes
-│   ├── dao/                   # Data Access Object layer
-│   ├── service/              # Service layer handling business logic
-│   ├── controller/           # Controller layer for handling user interactions
-│   ├── utility/                # Utility classes for common functions
-│   ├── resource/            # Configuration files and static resources
-└── test/                         # Contains JUnit test cases for testing
-
 1. Model Layer (model/)
 The model package contains entity classes that represent the core objects or data structures in the application, such as Bank, Account, SavingsAccount, CurrentAccount, and Transaction. These classes often correspond to database tables, mapping attributes to columns.
 •	Purpose: Encapsulate the data and define the structure of objects used throughout the application.
@@ -83,49 +73,6 @@ The schema consists of the following tables:
 4.	Transaction: Records all transactions (deposits, withdrawals, and transfers) linked to accounts.
 5.	DepositTransaction and WithdrawalTransaction: Specialized tables for different transaction types, inheriting from the Transaction table.
 <img width="354" alt="image" src="https://github.com/user-attachments/assets/c1e49bf6-6922-4234-81af-845a1a258ffc">
-
-**Complete Project Structure**
-
-BankingApplication/
-├── src/
-│   ├── model/                     # Entity classes
-│   │   ├── Bank.java
-│   │   ├── Account.java
-│   │   ├── SavingsAccount.java
-│   │   ├── CurrentAccount.java
-│   │   ├── Transaction.java
-│   │   ├── DepositTransaction.java
-│   │   ├── WithdrawalTransaction.java
-│   ├── dao/                       # Data Access Object (DAO) layer
-│   │   ├── AccountDAO.java
-│   │   ├── AccountDAOImpl.java
-│   │   ├── BankDAO.java
-│   │   ├── BankDAOImpl.java
-│   │   ├── TransactionDAO.java
-│   │   ├── TransactionDAOImpl.java
-│   ├── service/                   # Service layer for business logic
-│   │   ├── AccountService.java
-│   │   ├── TransactionService.java
-│   │   ├── BankService.java
-│   ├── controller/                # Controller layer for user interactions
-│   │   ├── BankController.java
-│   ├── utility/                   # Utility classes
-│   │   ├── DBConnection.java
-│   │   ├── TransactionHistoryUtil.java
-│   ├── resource/                  # SQL schema and configuration files
-│   │   ├── sql.schema
-├── test/                          # Test directory
-│   ├── dao/                       # Tests for DAO classes
-│   │   ├── AccountDAOTest.java
-│   │   ├── BankDAOTest.java
-│   │   ├── TransactionDAOTest.java
-│   ├── service/                   # Tests for Service classes
-│   │   ├── AccountServiceTest.java
-│   │   ├── TransactionServiceTest.java
-│   │   ├── BankServiceTest.java
-│   ├── controller/                # Tests for Controller classes
-│   │   ├── BankControllerTest.java
-├── README.md                      # Documentation file
 
 
 ![image](https://github.com/user-attachments/assets/8af988c2-d74a-49df-9da9-17030b3b6815)
